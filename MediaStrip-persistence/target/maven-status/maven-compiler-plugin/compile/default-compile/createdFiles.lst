@@ -1,0 +1,13 @@
+com/mediastrip/service/mock/VideoDAO.class
+com/mediastrip/service/mock/MediaDAO.class
+com/mediastrip/service/mock/FileDAO.class
+com/mediastrip/mock/MediaProvider.class
+com/mediastrip/service/mock/PlaylistDAO.class
+com/mediastrip/service/mock/TagDAO.class
+com/mediastrip/service/impl/DAO.class
+com/mediastrip/service/mock/UserDAO.class
+com/mediastrip/service/impl/DAOException.class
+com/mediastrip/service/mock/IMock.class
+com/mediastrip/service/IPersistenceService.class
+com/mediastrip/service/mock/MusicDAO.class
+com/mediastrip/service/mock/PhotoDAO.class

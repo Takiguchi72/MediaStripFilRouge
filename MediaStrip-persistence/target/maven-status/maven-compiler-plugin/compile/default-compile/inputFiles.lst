@@ -1,0 +1,13 @@
+/media/data/Takiguchi/Developpement/Java/MediaStrip/MediaStrip-persistence/src/main/java/com/mediastrip/service/impl/DAO.java
+/media/data/Takiguchi/Developpement/Java/MediaStrip/MediaStrip-persistence/src/main/java/com/mediastrip/service/mock/FileDAO.java
+/media/data/Takiguchi/Developpement/Java/MediaStrip/MediaStrip-persistence/src/main/java/com/mediastrip/service/mock/VideoDAO.java
+/media/data/Takiguchi/Developpement/Java/MediaStrip/MediaStrip-persistence/src/main/java/com/mediastrip/service/mock/UserDAO.java
+/media/data/Takiguchi/Developpement/Java/MediaStrip/MediaStrip-persistence/src/main/java/com/mediastrip/service/mock/MediaDAO.java
+/media/data/Takiguchi/Developpement/Java/MediaStrip/MediaStrip-persistence/src/main/java/com/mediastrip/service/mock/PhotoDAO.java
+/media/data/Takiguchi/Developpement/Java/MediaStrip/MediaStrip-persistence/src/main/java/com/mediastrip/service/impl/DAOException.java
+/media/data/Takiguchi/Developpement/Java/MediaStrip/MediaStrip-persistence/src/main/java/com/mediastrip/service/IPersistenceService.java
+/media/data/Takiguchi/Developpement/Java/MediaStrip/MediaStrip-persistence/src/main/java/com/mediastrip/service/mock/TagDAO.java
+/media/data/Takiguchi/Developpement/Java/MediaStrip/MediaStrip-persistence/src/main/java/com/mediastrip/service/mock/PlaylistDAO.java
+/media/data/Takiguchi/Developpement/Java/MediaStrip/MediaStrip-persistence/src/main/java/com/mediastrip/service/mock/IMock.java
+/media/data/Takiguchi/Developpement/Java/MediaStrip/MediaStrip-persistence/src/main/java/com/mediastrip/mock/MediaProvider.java
+/media/data/Takiguchi/Developpement/Java/MediaStrip/MediaStrip-persistence/src/main/java/com/mediastrip/service/mock/MusicDAO.java
