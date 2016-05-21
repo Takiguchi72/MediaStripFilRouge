@@ -1,5 +1,6 @@
 package com.mediastrip.components;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -7,7 +8,9 @@ import java.util.List;
  * The Class User.
  */
 public class User {
-
+	/* ********************************************************************* */
+	/* Attributes */
+	/* ********************************************************************* */
 	/** The id. */
 	private int id;
 
@@ -41,6 +44,51 @@ public class User {
 	/** The friends. */
 	private List<User> friends;
 
+	/* ********************************************************************* */
+	/* Constructors */
+	/* ********************************************************************* */
+	/**
+	 * Default constructor that init an empty user.<br/>
+	 * <br/>
+	 * The {@code medias} attribute is initialized as a Media {@code ArrayList}.<br/>
+	 * The {@code publishers} attribute is initialized as a User
+	 * {@code ArrayList}.<br/>
+	 * The {@code friends} attribute is initialized as a User {@code ArrayList}.<br/>
+	 * The {@code inscriptionDate} attribute is initialized with the today's
+	 * date.<br/>
+	 * The {@code lastConnection} attribute is initialized with the today's
+	 * date.
+	 * 
+	 * @see java.util.ArrayList
+	 */
+	public User() {
+		medias = new ArrayList<Media>();
+		publishers = new ArrayList<User>();
+		friends = new ArrayList<User>();
+		final Date todayDate = new Date();
+		inscriptionDate = todayDate;
+		lastConnection = todayDate;
+	}
+
+	/**
+	 * Init a new user with the parameters.
+	 * @param pName The user name.
+	 * @param pFirstName The user firstname.
+	 * @param pMail The user mail.
+	 * @param pPassword The user password.
+	 */
+	public User(final String pName, final String pFirstName,
+			final String pMail, final String pPassword) {
+		this();
+		name = pName;
+		firstName = pFirstName;
+		mail = pMail;
+		password = pPassword;
+	}
+
+	/* ********************************************************************* */
+	/* Getters & Setters */
+	/* ********************************************************************* */
 	/**
 	 * Gets the id.
 	 *

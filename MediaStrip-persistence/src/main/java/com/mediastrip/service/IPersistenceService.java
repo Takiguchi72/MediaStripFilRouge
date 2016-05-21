@@ -2,6 +2,8 @@ package com.mediastrip.service;
 
 import java.util.List;
 
+import com.mediastrip.service.impl.DAOException;
+
 /**
  * The interface for persist objects.
  * 
@@ -19,17 +21,17 @@ public interface IPersistenceService<T> {
 	 *            The T object to persist.
 	 * @return The T object get from the database after hit persistence.
 	 */
-	public T persist(final T pObject);
+	public T persist(final T pObject) throws DAOException;
 
 	/**
 	 * Delete a T object into database.
 	 * @param pObject The T object to delete.
 	 */
-	public void delete(final T pObject);
+	public void delete(final T pObject) throws DAOException;
 
 	/**
 	 * Get all the T objects into database.
 	 * @return The list of T objects which are into database.
 	 */
-	public List<T> findAll();
+	public List<T> findAll() throws DAOException;
 }

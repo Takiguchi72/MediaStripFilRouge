@@ -1,5 +1,6 @@
 package com.mediastrip.components;
 
+import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
@@ -7,31 +8,71 @@ import java.util.List;
  * The Class Media.
  */
 public class Media {
-    
-    /** The id. */
-    private int       id;
+	/* ********************************************************************* */
+	/* Attributes */
+	/* ********************************************************************* */
+	/** The id. */
+	private int id;
 
-    /** The title. */
-    private String    title;
+	/** The title. */
+	private String title;
 
-    /** The description. */
-    private String    description;
+	/** The description. */
+	private String description;
 
-    /** The creation date. */
-    private Date      creationDate;
+	/** The creation date. */
+	private Date creationDate;
 
-    /** The publique. */
-    private boolean   publique;
+	/** The publique. */
+	private boolean publique;
 
-    /** The publisher. */
-    private User      publisher;
+	/** The publisher. */
+	private User publisher;
 
-    /** The main tag. */
-    private Tag       mainTag;
+	/** The main tag. */
+	private Tag mainTag;
 
-    /** The tag list. */
-    private List<Tag> tagList;
+	/** The tag list. */
+	private List<Tag> tagList;
 
+	/* ********************************************************************* */
+	/* Constructors */
+	/* ********************************************************************* */
+	/**
+	 * Default contructor that init an empty media.<br/>
+	 * <br/>
+	 * The {@code tagList} attribute is initialized as a Tag {@code ArrayList}.<br/>
+	 * The {@code creationDate} attribute is initialized with the today's date.
+	 * 
+	 * @see java.util.ArrayList
+	 */
+	public Media() {
+		tagList = new ArrayList<Tag>();
+	}
+
+	/**
+	 * Init a new media with the parameters.
+	 * 
+	 * @param pTitle
+	 *            The media title.
+	 * @param pDescription
+	 *            The media description.
+	 * @param pPublisher
+	 *            The media publisher.
+	 * @param pMainTag
+	 *            The media main tag.
+	 */
+	public Media(final String pTitle, final String pDescription, final User pPublisher, final Tag pMainTag) {
+		this();
+		title = pTitle;
+		description = pDescription;
+		publisher = pPublisher;
+		mainTag = pMainTag;
+	}
+
+	/* ********************************************************************* */
+	/* Getters & Setters */
+	/* ********************************************************************* */
 	/**
 	 * Gets the id.
 	 *
@@ -44,7 +85,8 @@ public class Media {
 	/**
 	 * Sets the id.
 	 *
-	 * @param id the new id
+	 * @param id
+	 *            the new id
 	 */
 	public void setId(int id) {
 		this.id = id;
@@ -62,7 +104,8 @@ public class Media {
 	/**
 	 * Sets the title.
 	 *
-	 * @param title the new title
+	 * @param title
+	 *            the new title
 	 */
 	public void setTitle(String title) {
 		this.title = title;
@@ -80,7 +123,8 @@ public class Media {
 	/**
 	 * Sets the description.
 	 *
-	 * @param description the new description
+	 * @param description
+	 *            the new description
 	 */
 	public void setDescription(String description) {
 		this.description = description;
@@ -98,7 +142,8 @@ public class Media {
 	/**
 	 * Sets the creation date.
 	 *
-	 * @param creationDate the new creation date
+	 * @param creationDate
+	 *            the new creation date
 	 */
 	public void setCreationDate(Date creationDate) {
 		this.creationDate = creationDate;
@@ -116,7 +161,8 @@ public class Media {
 	/**
 	 * Sets the publique.
 	 *
-	 * @param publique the new publique
+	 * @param publique
+	 *            the new publique
 	 */
 	public void setPublique(boolean publique) {
 		this.publique = publique;
@@ -134,7 +180,8 @@ public class Media {
 	/**
 	 * Sets the publisher.
 	 *
-	 * @param publisher the new publisher
+	 * @param publisher
+	 *            the new publisher
 	 */
 	public void setPublisher(User publisher) {
 		this.publisher = publisher;
@@ -152,7 +199,8 @@ public class Media {
 	/**
 	 * Sets the main tag.
 	 *
-	 * @param mainTag the new main tag
+	 * @param mainTag
+	 *            the new main tag
 	 */
 	public void setMainTag(Tag mainTag) {
 		this.mainTag = mainTag;
@@ -170,7 +218,8 @@ public class Media {
 	/**
 	 * Sets the tag list.
 	 *
-	 * @param tagList the new tag list
+	 * @param tagList
+	 *            the new tag list
 	 */
 	public void setTagList(List<Tag> tagList) {
 		this.tagList = tagList;
