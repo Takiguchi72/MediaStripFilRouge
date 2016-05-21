@@ -13,4 +13,4 @@ Le projet est composé en plusieurs sous-projets que voici :
 Chaque sous-projet est un projet maven, et les sous-projets ont des dépendances entre eux pour pouvoir fonctionner.
 Afin de compiler tous les projets d'un coup, il suffit d'exécuter le script **mavenInstall.sh** :
 
-> sh mavenInstall.sh
+    sh mavenInstall.sh
